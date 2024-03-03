@@ -4,7 +4,9 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                    agent slave1
+                    agent {
+                            label "slave1"
+                    }
                     sh '''
                     ls -lrt
                     date

@@ -4,7 +4,9 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                    sleep 10
+                    sh '''
+                    ls -lrt
+                    '''
             
             }
       
